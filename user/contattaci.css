@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(243, 243, 165);
+}
+
+p {
+  padding-top: 16px;
+  margin-bottom: 10px;
+
+  text-shadow: 0px 5px goldenrod;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  color: gold;
+}
+
+.contact-form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-data-update input,
+.contact-form input {
+  width: 94%;
+  height: 40px;
+  padding: 0 3%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: gold;
+  box-shadow: 0px 3px 0px 0px goldenrod;
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+.contact-form textarea {
+  width: 94%;
+  height: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: gold;
+  box-shadow: 0px 3px 0px 0px goldenrod;
+  font-size: 20px;
+  font-weight: 400;
+  color: gray;
+  resize: none;
+}
+
+.form-data-update button,
+.contact-form button {
+  display: block;
+  width: 40%;
+  height: 40px;
+  margin: 10px auto 0;
+  border: none;
+  border-radius: 25px;
+  background-color: gold;
+  font-size: 20px;
+  font-weight: 700;
+  color: grey;
+  box-shadow: 0px 5px 0px 0px goldenrod;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  box-shadow: 0px 5px 0px 0px transparent; /* cosi faccio scomparire l'ombra sotto il bottone.. da un effetto 3d.. piu o meno. */
+  position: relative;
+  top: 5px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0px 3px 0px 0px transparent;
+  position: relative;
+  top: 3px;
+  outline: none;
+}
+
+/* impostazioni */
+.input-error {
+  box-shadow: 0 0 0 3px red !important;
+}
+.form-message {
+  text-align: center;
+}
+.form-error {
+  color: red;
+}
+.email,
+.email-text {
+  display: inline;
+}
+
+.username,
+.username-text {
+  display: inline;
+}
+
+.username {
+  font-weight: 700;
+}
+.email {
+  font-weight: 700;
+}
+
+.email-text {
+  padding-left: 50px;
+}
+
+.settings-header-text {
+  text-shadow: 0px 5px goldenrod;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+.settings-header-bot-text {
+  float: left;
+}
+
+#text {
+  margin-top: 10px;
+  font-weight: 700;
+}
+.propic-text {
+  font-weight: 700;
+  text-transform: uppercase;
+}
