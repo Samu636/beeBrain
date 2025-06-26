@@ -1,0 +1,173 @@
+#body-quiz {
+  background-color: rgb(243, 243, 165);
+}
+.header-text {
+  /*text-shadow: 0px 5px black;*/
+  text-align: center;
+  /*text-transform: uppercase;*/
+  font-size: 40px;
+  font-weight: 700;
+  color: goldenrod;
+}
+
+#question-card {
+  background-color: gold;
+  box-shadow: 0px 3px 0px 0px goldenrod;
+  border-radius: 25px;
+  position: center;
+  width: 700px;
+  margin: auto;
+  display: inline-block;
+}
+#question-container {
+  margin-top: 60px;
+  background-color: goldenrod;
+  border-radius: 25px;
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+#submit-quiz {
+  display: inline-block;
+}
+
+#question-text {
+  padding-top: 30px;
+}
+
+#answer-text {
+  padding-top: 40px;
+}
+
+#labeltrue {
+  padding-left: 20px;
+}
+
+#timer {
+  /*text-shadow: 0px 5px gold;*/
+  text-align: center;
+  /*text-transform: uppercase;*/
+  font-size: 35px;
+  font-weight: 700;
+  color: red;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(243, 243, 165);
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: gold;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: gold;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* cosi è piu o meno al centro */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: goldenrod;
+}
+
+/* resoult css */
+.container-resoult {
+  background-color: gold;
+  margin-top: 30px;
+  width: fit-content;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 0px 0px goldenrod;
+}
+.resoult-header-text {
+  padding-top: 16px;
+  margin-bottom: 10px;
+
+  text-shadow: 0px 5px goldenrod;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+#main-risultati {
+  background-color: rgb(243, 243, 165);
+}
+
+/* progress bar */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 0%;
+}
+
+.media-player {
+  margin-top: 400px;
+  position: fixed;
+  margin-left: 50px;
+}
+
+.media-text {
+  font-weight: 700;
+}

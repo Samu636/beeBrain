@@ -1,0 +1,56 @@
+#bodyaboutus {
+  background-color: rgb(243, 243, 165);
+}
+/* Carousel base class */
+.carousel {
+  margin-left: 8%;
+  margin-bottom: 2%;
+  margin-right: 8%;
+  margin-top: 8%;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+#my-carousel {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.carousel-inner {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  background-color: rgb(119, 119, 119);
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  height: 610px;
+  transition-duration: 0.5s;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+.carousel-text {
+  color: black;
+  font-size: 30px;
+}
+.blur {
+  filter: blur(10px);
+}

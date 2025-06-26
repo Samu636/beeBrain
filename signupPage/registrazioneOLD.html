@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <title>beeBrain-Registrazione</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width-device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/prova.css" />
+  <head>
+    <script type="text/javascript" language="javascript">
+      function ValidaForm() {
+        if (document.registrazione.nome.value == "") {
+          alert("Inserire nome");
+          return false;
+        }
+        if (document.registrazione.cognome.value == "") {
+          alert("Inserire cognome");
+          return false;
+        }
+        if (document.registrazione.email.value == "") {
+          alert("Inserisci email");
+          return false;
+        }
+        if ((document.registrazione.username.value = "")) {
+          alert("Inserisci username");
+          return false;
+        }
+        if (document.registrazione.password.value == "") {
+          alert("Inserisci password");
+          return false;
+        }
+        if (document.registrazione.confermapassword.value == "") {
+          alert("Conferma password");
+          return false;
+        }
+        if (
+          document.registrazione.password.value !=
+          document.registrazione.confermapassword.value
+        ) {
+          alert("La password non coincide");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body class="text-center">
+    <header>
+      <nav class="navbar navbar-expand-lg" style="background-color: gold;">
+        <a class="navbar-brand" href="#">beeBrain</a>
+        <!--qui possiamo mettere un easter egg/animiazione di un ape-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTop"
+          aria-controls="navbarTop"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTop">
+          <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="/index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="#">Chi siamo</a>
+            <a class="nav-item nav-link" href="#">navbar3</a>
+          </div>
+          <div class="navbar-nav ml-auto">
+            <a
+              class="btn btn-outline-dark my-2 mr-sm-2"
+              href="/loginPage/login.html"
+              >Log In</a
+            >
+            <a
+              class="btn btn-outline-dark my-2 mr-sm-2 active"
+              href="/signupPage/registrazione.html"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <h1 class="mb-lg-5 font-weight-bolder">
+      Ciao,iscriviti subito a beeBrain!
+    </h1>
+    <form
+      action=""
+      method="POST"
+      name="registrazione"
+      onsubmit="return ValidaForm();"
+    >
+      Nome:
+      <input type="text" name="nome" size="30" maxlength="30" autofocus />
+      <br />
+      Cognome:
+      <input type="text" name="cognome" size="30" maxlength="30" />
+      <br />
+      Email:
+      <input type="email" name="email" size="30" maxlength="30" />
+      <br />
+      Username:
+      <input type="text" name="username" size="30" maxlength="10" />
+      <br />
+      Password:
+      <input type="password" name="password" size="30" maxlength="20" />
+      <br />
+      Conferma Password:
+      <input type="password" name="confermapassword" size="30" maxlength="20" />
+      <br />
+      <br />
+      <input type="submit" value="Registrati" />
+    </form>
+  </body>
+  <!-- serve per far funzionare il bottone nella navbar-->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</html>
