@@ -1,7 +1,14 @@
-var bird;
+var bee;
 var pipes = [];
 var beeSprite;
 var pipeSprite;
+var pipeBody;
+var pipeBodyINV;
+var pipeTop;
+var pipeHeadTop;
+var pipeTopINV;
+var pipeBottom;
+var pipeBottomINV;
 var background;
 var backgroundX;
 var score = 0;
@@ -12,6 +19,12 @@ function preload() {
   pipeSpriteInversa = loadImage("/game/grafica/pipefix2inversa.png");
   beeSprite = loadImage("/game/grafica/flappyBee.png");
   background = loadImage("/game/grafica/backgroundfB.png");
+  pipeBody = loadImage("/game/grafica/mid.png");
+  pipeBodyINV = loadImage("/game/grafica/midrev.png");
+  pipeHeadBottom = loadImage("/game/grafica/top.png");
+  pipeHeadTop = loadImage("/game/grafica/toprev.png");
+  pipeBottom = loadImage("/game/grafica/bottom.png");
+  pipeBottomINV = loadImage("/game/grafica/bottomrev.png");
 }
 
 function setup() {
@@ -44,17 +57,17 @@ function draw() {
     pipes[i].show();
     pipes[i].update();
 
-    if (pipes[i].pass(bird)) {
+    if (pipes[i].pass(bee)) {
       score++;
     }
-    if (pipes[i].hits(bird)) {
+    if (pipes[i].hits(bee)) {
       console.log("Ho preso la pipe fratelli");
       //dobbiamo implementare la funzione di fine game.
       gameover();
     }
   }
-  bird.update();
-  bird.show();
+  bee.update();
+  bee.show();
   if (frameCount % 70 == 0) {
     //ogni tot frame spawno la pipe
     pipes.push(new Pipe());
@@ -84,14 +97,14 @@ function reset() {
   score = 0;
   backgroundX = 0;
   pipes = [];
-  bird = new Bird();
+  bee = new Bee();
   pipes.push(new Pipe());
   loop();
 }
 
 function keyPressed() {
   if (key == " ") {
-    bird.up();
+    bee.up();
     console.log("up");
     if (isOver) reset();
   }
